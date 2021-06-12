@@ -1,0 +1,42 @@
+body{
+    background-color: grey;
+    font-family: sans-serif;
+}
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 50px;
+    padding: 25px;
+}
+.mytabs input[type='radio'] {
+    display: none;
+}
+.mytabs label {
+    padding: 25px;
+    background: rgb(221, 221, 221);
+    font-weight: bold;
+}
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    background: white;
+    order: 1;
+    display: none;
+}
+.mytabs .tab h2 {
+    font-size: 3em;
+}
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+.mytabs input[type='radio']:checked + label {
+    background: white;
+}
+h2, p {
+    color: white;
+    text-align: center;
+}
+table {
+    width: 70%;
+}
